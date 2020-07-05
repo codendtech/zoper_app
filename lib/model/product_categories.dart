@@ -6,7 +6,6 @@ class ProductCategories {
   String imageUrl;
   String name;
   Timestamp timestamp;
-  String test;
 
   ProductCategories({this.dbCount, this.imageUrl, this.name, this.timestamp});
 
