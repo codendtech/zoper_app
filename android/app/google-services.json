@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "project_number": "8962061375",
+    "firebase_url": "https://zooper-70d7e.firebaseio.com",
+    "project_id": "zooper-70d7e",
+    "storage_bucket": "zooper-70d7e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8962061375:android:4e9c166cf2c1f7723bf48a",
+        "android_client_info": {
+          "package_name": "com.codend.zooper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "8962061375-18ua9etafafe3rrg88lu277qal2bq441.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codend.zooper",
+            "certificate_hash": "60a5393444dbc8881893fab77fa12c11c4c6e2c6"
+          }
+        },
+        {
+          "client_id": "8962061375-k66604ma7d7b8vs2t0vj4gogssm3a4th.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_1ORZJLVhj-l2FbutVLhTHqooIWPbSQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "8962061375-k66604ma7d7b8vs2t0vj4gogssm3a4th.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8962061375:android:9502ab19af07489d3bf48a",
+        "android_client_info": {
+          "package_name": "com.codend.zoper_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "8962061375-n3v4ukvj8gp4748ttofqpf2jg7tqqgtb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codend.zoper_app",
+            "certificate_hash": "b588af814c5350529e6b51187712aa6bdd11befb"
+          }
+        },
+        {
+          "client_id": "8962061375-k66604ma7d7b8vs2t0vj4gogssm3a4th.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_1ORZJLVhj-l2FbutVLhTHqooIWPbSQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "8962061375-k66604ma7d7b8vs2t0vj4gogssm3a4th.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8962061375:android:a5e334b54201ccbc3bf48a",
+        "android_client_info": {
+          "package_name": "com.codend.zoperadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "8962061375-ko0kvnrlo65nprsnr8a53maqssnrqf8r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codend.zoperadmin",
+            "certificate_hash": "60a5393444dbc8881893fab77fa12c11c4c6e2c6"
+          }
+        },
+        {
+          "client_id": "8962061375-k66604ma7d7b8vs2t0vj4gogssm3a4th.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_1ORZJLVhj-l2FbutVLhTHqooIWPbSQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "8962061375-k66604ma7d7b8vs2t0vj4gogssm3a4th.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
