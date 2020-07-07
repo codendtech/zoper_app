@@ -7,7 +7,7 @@ class ProductCategories {
   String name;
   Timestamp timestamp;
 
-  ProductCategories({this.dbCount, this.imageUrl, this.name, this.timestamp});
+  ProductCategories(this.dbCount, this.imageUrl, this.name, this.timestamp);
 
   Map<String, dynamic> toJson() => {
         'dbCount': dbCount,

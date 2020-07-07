@@ -11,7 +11,7 @@ const colorButtonThemeStart = Color(0xFFFF774F);
 const colorButtonThemeEnd = Color(0xFFF84B18);
 
 const largeTitleTextStyle = TextStyle(
-  fontSize: 30.0,
+  fontSize: 25.0,
   fontWeight: FontWeight.bold,
   color: colorBlack,
   fontFamily: 'ProductSans',

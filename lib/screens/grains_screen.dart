@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:zoper_app/model/offers_model.dart';
 import 'package:zoper_app/model/product_categories.dart';
 import 'package:zoper_app/screens/grains_details_screen.dart';
 import 'package:zoper_app/utilities/constants.dart';
@@ -14,8 +15,7 @@ class GrainsScreen extends StatefulWidget {
 }
 
 class _GrainsScreenState extends State<GrainsScreen> {
-  ProductCategories _productCategories;
-
+  OfferModel _offerModel;
   @override
   Widget build(BuildContext context) {
     return StreamBuilder<QuerySnapshot>(
@@ -30,7 +30,11 @@ class _GrainsScreenState extends State<GrainsScreen> {
             crossAxisCount: 2,
             itemCount: snapshot.data.documents.length,
             itemBuilder: (context, index) {
-              DocumentSnapshot categories = snapshot.data.documents[index];
+              DocumentSnapshot documentSnapshot =
+                  snapshot.data.documents[index];
+
+              _offerModel = OfferModel.fromJson(documentSnapshot.data);
+
               return Container(
                 margin: EdgeInsets.all(8.0),
                 decoration: BoxDecoration(
@@ -46,10 +50,15 @@ class _GrainsScreenState extends State<GrainsScreen> {
                       left: 0,
                       child: GestureDetector(
                         onTap: () {
+                          print(index);
+                          OfferModel offerModel = OfferModel.fromJson(
+                              snapshot.data.documents[index].data);
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => GrainsDetails()));
+                                  builder: (context) => GrainsDetails(
+                                        offerModel: offerModel,
+                                      )));
                         },
                         child: Container(
                           width: double.infinity,
@@ -60,20 +69,22 @@ class _GrainsScreenState extends State<GrainsScreen> {
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: <Widget>[
                               Image.network(
-                                categories.data['imageUrl'],
+                                _offerModel.imageUrl,
                                 width: 90.0,
                                 height: 90.0,
                                 fit: BoxFit.fitHeight,
                               ),
                               SizedBox(height: 10.0),
                               Text(
-                                categories.data['name'],
+                                _offerModel.name,
                                 textAlign: TextAlign.start,
                                 style: bodyTextStyle,
+                                maxLines: 2,
                               ),
                               Text(
                                 'Some Description',
                                 textAlign: TextAlign.start,
+                                maxLines: 2,
                                 style: TextStyle(
                                   fontSize: 14.0,
                                   color: Colors.black45,
@@ -84,7 +95,7 @@ class _GrainsScreenState extends State<GrainsScreen> {
                                 children: <Widget>[
                                   Expanded(
                                     child: Text(
-                                      '₹146.50',
+                                      '₹${_offerModel.mrp}',
                                       textAlign: TextAlign.start,
                                       style: priceTextSmall,
                                     ),
